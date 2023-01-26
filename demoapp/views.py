@@ -6,3 +6,8 @@ def index(request):
 
 def salamu(request):
     return HttpResponse('salamu za sasa')
+
+def pathview(request, name, id): 
+    return HttpResponse("Name:{} UserID:{}".format(name, id)) 
+def handler404(request, exception):
+    return HttpResponse('404 erorr')
